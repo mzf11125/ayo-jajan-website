@@ -19,7 +19,7 @@ export default function Home() {
           This is Ayo Jajan, an app to track local street vendors
         </h1>
       </section>
-      <section></section>
+      {/* <section></section> */}
     </main>
   );
 }
