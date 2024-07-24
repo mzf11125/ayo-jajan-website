@@ -1,4 +1,3 @@
-// File: app/page.tsx
 import Image from "next/image";
 import { Press_Start_2P } from "next/font/google";
 
