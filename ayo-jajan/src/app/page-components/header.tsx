@@ -1,6 +1,8 @@
+"use client";
+
 import Image from "next/image";
-import { Press_Start_2P } from "next/font/google";
 import logo from "../../public/logo.png";
+import { Press_Start_2P } from "next/font/google";
 
 const pressStart2P = Press_Start_2P({
   weight: "400",
