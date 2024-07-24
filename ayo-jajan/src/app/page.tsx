@@ -20,10 +20,11 @@ export default function Home() {
           Welcome to Ayo Jajan
         </h1>
         <p className="text-xl mb-8">
-          Track local street vendors in real-time and discover culinary adventures!
+          Track local street vendors in real-time and discover culinary
+          adventures!
         </p>
         <Image
-          src="/ayo-jajan-logo.png"
+          src="/android-chrome-192x192.png"
           alt="Ayo Jajan Logo"
           width={200}
           height={200}
