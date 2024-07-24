@@ -18,20 +18,20 @@ export default function Home() {
         <h1
           className={`${pressStart2P.className} font-bold text-3xl sm:text-5xl mb-8`}
         >
-          Welcome to Ayo Jajan
+          Welcome to Ayo Jajan App
         </h1>
-        <p className="text-xl mb-8">
-          Track local street vendors in real-time and discover culinary
-          adventures!
+        <p className="text-3xl mb-8">
+          Find and collect street food treats in real-time - your tasty city
+          adventure begins!
         </p>
         <div className="flex justify-center">
-          <Image src={logo} alt="Ayo Logo" width={200} height={200} priority />
+          <Image src={logo} alt="Ayo Logo" width={350} height={350} priority />
         </div>
       </section>
       <section className="mt-12">
         <a
           href="#"
-          className={`${pressStart2P.className} bg-black text-white py-3 px-6 rounded-full text-lg hover:bg-gray-800 transition-colors`}
+          className={`${pressStart2P.className} bg-black text-white py-5 px-8 rounded-full text-lg hover:bg-gray-800 transition-colors`}
         >
           Start Exploring
         </a>
