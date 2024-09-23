@@ -22,7 +22,7 @@ export default function HeaderSection() {
         adventure begins!
       </p>
       <div className="flex justify-center">
-        <Image src={logo} alt="Ayo Logo" width={350} height={350} priority />
+        <Image src={logo} alt="Ayo Jajan Logo" width={350} height={350} priority />
       </div>
     </section>
   );
