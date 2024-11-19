@@ -11,8 +11,9 @@ export default function Home() {
     >
       <HeaderSection />
       <ExploreButton />
-      <FooterSection />
       <AboutSection />
+      <FooterSection />
     </main>
+    
   );
 }
