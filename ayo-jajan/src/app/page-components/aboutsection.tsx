@@ -1,4 +1,6 @@
-import { motion } from "magic-ui";
+"use client";
+
+import { motion } from "framer-motion";
 
 export default function AboutSection() {
   return (
@@ -9,7 +11,7 @@ export default function AboutSection() {
 
       <motion.section
         id="about"
-        className="mt-20 p-10 bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 text-white rounded-lg shadow-lg"
+        className="mt-20 p-10 bg-yellow-300 text-black rounded-lg shadow-lg"
         animate={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0.8 }}
         transition={{ duration: 0.5 }}
