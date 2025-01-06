@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Press_Start_2P } from "next/font/google";
 import logo from "../../../public/logo.png";
 import { NavigationMenuBar } from "./navbar/navigation-bar";
+import ExploreButton from "./explorebutton";
 
 const pressStart2P = Press_Start_2P({
   weight: "400",
@@ -24,6 +25,7 @@ export default function HeaderSection() {
       <div className="flex justify-center">
         <Image src={logo} alt="Ayo Jajan Logo" width={350} height={350} priority />
       </div>
+      <ExploreButton />
     </section>
   );
 }
