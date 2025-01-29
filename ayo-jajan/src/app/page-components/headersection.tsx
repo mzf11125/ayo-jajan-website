@@ -1,29 +1,22 @@
-import Image from "next/image";
-import { Press_Start_2P } from "next/font/google";
-import logo from "../../../public/logo.png";
-import { NavigationMenuBar } from "./navbar/navigation-bar";
+import React from 'react';
 
-const pressStart2P = Press_Start_2P({
-  weight: "400",
-  subsets: ["latin"],
-  display: "swap",
-});
-
-export default function HeaderSection() {
+export const HeaderSection = ({ 
+  title,
+  description,
+  className = ''
+}: {
+  title: string;
+  description: string;
+  className?: string;
+}) => {
   return (
-    <section className="text-center">
-      <h1
-        className={`${pressStart2P.className} font-bold text-3xl sm:text-5xl mb-8`}
-      >
-        Welcome to Ayo Jajan App
+    <div className={`text-center ${className}`}>
+      <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl mb-4">
+        {title}
       </h1>
-      <p className="text-3xl mb-8">
-        Find and collect street food treats in real-time - your tasty city
-        adventure begins!
+      <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+        {description}
       </p>
-      <div className="flex justify-center">
-        <Image src={logo} alt="Ayo Jajan Logo" width={350} height={350} priority />
-      </div>
-    </section>
+    </div>
   );
-}
+};

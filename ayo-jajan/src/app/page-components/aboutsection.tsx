@@ -6,12 +6,11 @@ export default function AboutSection() {
   return (
     <>
       {/* Extra spacing to push the "About" section further down */}
-      {/* biome-ignore lint/style/useSelfClosingElements: <explanation> */}
-      <div className="h-[25vh]"></div>
+      <div className="h-[25vh]" />
 
       <motion.section
         id="about"
-        className="mt-20 p-10 bg-yellow-300 text-black rounded-lg shadow-lg"
+        className="mt-20 p-10 bg-white bg-opacity-75 text-gray-900 rounded-lg shadow-lg"
         animate={{ opacity: 1, scale: 1 }}
         initial={{ opacity: 0, scale: 0.8 }}
         transition={{ duration: 0.5 }}
