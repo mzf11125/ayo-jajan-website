@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function SocialProof() {
   return (
     <section className="py-16 bg-white/80 backdrop-blur-sm md:py-24">
@@ -29,7 +27,9 @@ export default function SocialProof() {
         <div className="mt-16 grid gap-8 md:grid-cols-3">
           <div className="rounded-xl bg-white p-6 shadow-lg">
             <p className="text-gray-600 mb-4">
-              "The live GPS tracking helped me find amazing street food spots I never would have discovered on my own. Completed 3 challenges in Bangkok alone!"
+              &quot;The live GPS tracking helped me find amazing street food
+              spots I never would have discovered on my own. Completed 3
+              challenges in Bangkok alone!&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 rounded-full bg-gradient-to-r from-amber-500 to-orange-500 flex items-center justify-center text-white">
@@ -44,7 +44,9 @@ export default function SocialProof() {
 
           <div className="rounded-xl bg-white p-6 shadow-lg">
             <p className="text-gray-600 mb-4">
-              "Earning eco rewards for using my reusable container added an extra layer of purpose to my food adventures. Love the sustainability focus!"
+              &quot;Earning eco rewards for using my reusable container added an
+              extra layer of purpose to my food adventures. Love the
+              sustainability focus!&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 rounded-full bg-gradient-to-r from-emerald-500 to-blue-500 flex items-center justify-center text-white">
@@ -59,7 +61,9 @@ export default function SocialProof() {
 
           <div className="rounded-xl bg-white p-6 shadow-lg">
             <p className="text-gray-600 mb-4">
-              "The community features connected me with fellow foodies. We now plan group challenges whenever we're in the same city!"
+              &quot;The community features connected me with fellow foodies. We
+              now plan group challenges whenever we&apos;re in the same
+              city!&quot;
             </p>
             <div className="flex items-center gap-3">
               <div className="h-10 w-10 rounded-full bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center text-white">
