@@ -13,11 +13,7 @@ export default function Home() {
           <HeroSection />
         </div>
 
-        <div className="mt-12">
-          <FeaturesSection />
-        </div>
-
-        <div className="mt-12">
+        <div className="mt-8">
           <AboutSection />
         </div>
 

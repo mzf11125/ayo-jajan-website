@@ -1,8 +1,18 @@
+"use client";
+
 import Image from "next/image";
+import { useState } from "react";
 import Link from "next/link";
 import { Gamepad2, MapPin, Trophy } from "lucide-react";
+import { WaitlistModal } from "./waitlist-modal";
 
 export default function HeroSection() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+
+  const handleModalToggle = () => {
+    setIsModalOpen(!isModalOpen);
+  };
+
   return (
     <section className="relative py-24 md:py-32 lg:py-40 overflow-hidden">
       <div className="container relative z-10 flex flex-col items-center gap-8 text-center">
@@ -14,7 +24,7 @@ export default function HeroSection() {
               alt="Ayo Jajan Logo"
               width={1000}
               height={1000}
-              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-28 w-28"
+              className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 h-40 w-40"
             />
           </div>
         </div>
@@ -55,10 +65,12 @@ export default function HeroSection() {
         <Link
           href="#waitlist"
           className="inline-flex items-center gap-2 text-amber-700 hover:text-amber-800 font-semibold text-lg transition-colors"
+          onClick={() => setIsModalOpen(true)}
         >
           Join our waitlist for early access
           <span aria-hidden="true">→</span>
         </Link>
+        <WaitlistModal open={isModalOpen} onOpenChange={setIsModalOpen} />
       </div>
 
       {/* Animated background elements */}

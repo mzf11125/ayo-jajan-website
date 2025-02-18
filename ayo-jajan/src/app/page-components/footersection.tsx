@@ -1,6 +1,6 @@
 export default function FooterSection() {
   return (
-    <footer className="w-full mt-12 text-center text-sm bg-gradient-to-b from-amber-500 via-orange-400 to-amber-300 text-gray-900 py-8">
+    <footer className="w-full mt-12 text-center text-sm bg-gradient-to-b from-amber-500 to-orange-400 text-gray-900 py-8 rounded-t-lg">
       <div className="container mx-auto flex flex-col items-center space-y-4">
         <p>
           Made with ❤️ by{" "}

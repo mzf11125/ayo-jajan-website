@@ -1,8 +1,17 @@
+"use client";
+
 import { MapPin, Trophy, LeafIcon, UsersIcon } from "lucide-react";
+import { motion } from "framer-motion";
 
 export default function HowItWorks() {
   return (
-    <section className="py-16 md:py-24 bg-amber-50">
+    <motion.section
+      id="how-it-works"
+      className="py-16 md:py-24 p-10 bg-white bg-opacity-75 text-gray-900 rounded-lg shadow-lg"
+      animate={{ opacity: 1, scale: 1 }}
+      initial={{ opacity: 0, scale: 0.8 }}
+      transition={{ duration: 0.5 }}
+    >
       <div className="container">
         <h2 className="text-3xl font-bold text-center text-gray-900 mb-12 md:text-4xl">
           Your Street Food Adventure
@@ -65,6 +74,6 @@ export default function HowItWorks() {
           </div>
         </div>
       </div>
-    </section>
+    </motion.section>
   );
 }
